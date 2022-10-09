@@ -452,3 +452,6 @@
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
+#
+[ignore]
+data="<b>Battery is charged!</b>"

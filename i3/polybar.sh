@@ -1,5 +1,5 @@
 #!/bin/bash
-APPLETS="cbatticon nm-applet blueman-applet pasystray"
+APPLETS="nm-applet blueman-applet pasystray"
 
 pkill polybar
 polybar &
@@ -13,3 +13,9 @@ do
 		$A &
 	fi
 done
+
+PID=$(ps aux | grep -v grep | grep $USER | grep cbatticon | awk '{print $2}')
+if [ -z $PID ]
+then
+	cbatticon -n -c "systemctl hibernate"
+fi
