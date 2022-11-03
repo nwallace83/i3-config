@@ -222,6 +222,6 @@ for_window [class="VirtualBox Machine"] move to workspace $ws5
 for_window [class="discord"] move to workspace $ws6
 
 #exec --no-startup-id i3-msg 'workspace2:Discord; exec /usr/bin/discord'
-exec i3-msg 'workspace1; exec /usr/bin/brave'
+exec i3-msg 'workspace1; exec /usr/bin/brave --use-gl=desktop --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder'
 exec --no-startup-id discord
 #exec --no-startup-id VBoxManage startvm "Windows"
