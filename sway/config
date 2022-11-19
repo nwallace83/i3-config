@@ -28,6 +28,7 @@ exec ntfd &
 exec waybar &
 exec_always xset dpms 0 0 300 &
 exec_always sh ~/.config/sway/applets.sh
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 #font pango:JetBrainsMono Nerd Font 8
 font pango:Hack 10px
